@@ -1,1 +1,1 @@
-Converter anos luz para kilometros.
+Converter anos luz para quilómetros.
