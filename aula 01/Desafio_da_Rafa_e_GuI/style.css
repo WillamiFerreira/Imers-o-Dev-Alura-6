@@ -1,55 +1,55 @@
 body {
-    font-family: "Roboto Mono", monospace;
-    text-align: center;
-    background-image: url(https://lh3.googleusercontent.com/pw/AMWts8CEvOiG8w5jmw-o-TJQlh2ic5OnCGG3HpbapZABnuYtcQ9xxsw7P6GHnZr2kR3eNaOZs0GC5-_fjTS4YnNyUkTmPFuzwwy2h1o860RT1RfEk7OiVrao_Aa-JQDUYUC4k0Gy2Ju2tbnifnMja2nnimfbPA=w1044-h696-no?authuser=0);
-    background-color: #000000;
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-    height: 100vh;
-  }
-  
-  .container {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .page-title {
-    color: #ffffff;
-    margin: 0 0 5px;
-  }
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  background-image: url(https://lh3.googleusercontent.com/pw/AMWts8CEvOiG8w5jmw-o-TJQlh2ic5OnCGG3HpbapZABnuYtcQ9xxsw7P6GHnZr2kR3eNaOZs0GC5-_fjTS4YnNyUkTmPFuzwwy2h1o860RT1RfEk7OiVrao_Aa-JQDUYUC4k0Gy2Ju2tbnifnMja2nnimfbPA=w1044-h696-no?authuser=0);
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 
-  .page-subtitle {
-    color: #ffffff;
-    margin-top: 5px;
-  }
-  
-  .page-logo {
-    width: 200px;
-  }
-  
-  .alura-logo {
-    width: 40px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-  
-  .input{
-    color:white;
-    width: fit-content;
-    margin: 5px auto;
-    background-color: hsla(0, 0%, 0%, 0.463);
-  }
-  body > img {
-    margin: 0 10px;
-  }
+.container {
+  text-align: center;
+  padding: 20px;
+}
 
-  a > img:nth-child(2){
-    transform: scale(.8);
-  }
-  
-  img {
-    max-height: 250px;
-  }
-  
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.input {
+  color: white;
+  width: fit-content;
+  margin: 5px auto;
+  background-color: hsla(0, 0%, 0%, 0.463);
+}
+
+body>img {
+  margin: 0 10px;
+}
+
+a>img:nth-child(2) {
+  transform: scale(.8);
+}
+
+img {
+  max-height: 250px;
+}

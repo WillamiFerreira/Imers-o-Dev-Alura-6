@@ -1,53 +1,52 @@
 body {
-    font-family: "Roboto Mono", monospace;
-    text-align: center;
-    background-image: url("https://lh3.googleusercontent.com/pw/AMWts8Dy2tRBw196nkq47NzS0W-ClZ5YIbVFkwCLfTMxqBYlH6RT9gzOI9TNWgXad7df2DD32fFfYBJemCA71WM_iaplbFI2OqN5Qi83_gpGKvFoQFIDkvnvvJByqzdFuIY0is3vT23l_FpV1FWOG8rKehfUSQ=w675-h380-no?authuser=0");
-    background-color: #000000;
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-    height: 100vh;
-  }
-  
-  .container {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .page-title {
-    color: #ffffff;
-    margin: 0 0 5px;
-  }
-  
-  .page-subtitle {
-    color: #ffffff;
-    margin-top: 5px;
-  }
-  
-  .page-logo {
-    width: 200px;
-  }
-  
-  .alura-logo {
-    width: 40px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  background-image: url("https://lh3.googleusercontent.com/pw/AMWts8Dy2tRBw196nkq47NzS0W-ClZ5YIbVFkwCLfTMxqBYlH6RT9gzOI9TNWgXad7df2DD32fFfYBJemCA71WM_iaplbFI2OqN5Qi83_gpGKvFoQFIDkvnvvJByqzdFuIY0is3vT23l_FpV1FWOG8rKehfUSQ=w675-h380-no?authuser=0");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 
-  .input-container{
-    color: white;
-    background-color: hsla(0, 0%, 0%, 0.671);
-    width: fit-content;
-    margin: auto;
-    padding: 4px;
-  }
-  
-  body > img {
-    margin: 0 10px;
-  }
-  
-  img {
-    max-height: 250px;
-  }
-  
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.input-container {
+  color: white;
+  background-color: hsla(0, 0%, 0%, 0.671);
+  width: fit-content;
+  margin: auto;
+  padding: 4px;
+}
+
+body>img {
+  margin: 0 10px;
+}
+
+img {
+  max-height: 250px;
+}
