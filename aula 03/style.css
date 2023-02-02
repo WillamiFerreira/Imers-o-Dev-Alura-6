@@ -1,21 +1,28 @@
-body {
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
     font-family: "Roboto Mono", monospace;
     text-align: center;
-    background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/background-aluraflix.png");
+    background-image: url("https://lh3.googleusercontent.com/pw/AMWts8BO990usySdQyKigJrsPvSHR1QxzAayCa_AT6aWMBPnjpSkas3IMXmQOs4I-mDCvzl1LBdLEAcpAw2uXUc9q4UJVb30gx8GP1Umw-P2nRtbkm6IPst5xNh4iX1IQPARKFDo2aHSIMFFXk_X_IfLmSS-0A=w675-h451-no?authuser=0");
     background-color: #000000;
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
+    min-height: 100vh;
+    backdrop-filter: blur(10px);
 }
 
 .container {
     text-align: center;
-    padding: 20px;
+    min-height: 100vh;
 }
 
 .page-title {
     color: #ffffff;
-    margin: 0 0 5px;
+    margin: 20px 0 5px;
 }
 
 .page-subtitle {
@@ -30,14 +37,27 @@ body {
 .alura-logo {
     width: 40px;
     position: absolute;
-    top: 10px;
+    top: -10px;
     right: 10px;
 }
-
-body>img {
-    margin: 0 10px;
+.movies-container{
+    width: 90vw;
+    margin: auto;
+    margin-top: 30px;
 }
 
+.banner-container{
+    display: inline-flex;
+    flex-direction: column;
+    max-width:166px; max-height: 250px;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 8px;
+    color: white;
+    font-size: 0.9em;
+    row-gap: 5px;
+    
+}
 img {
     max-height: 250px;
 }
