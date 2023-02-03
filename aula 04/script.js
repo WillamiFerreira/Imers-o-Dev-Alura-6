@@ -20,7 +20,9 @@ function adicionarFilme() {
 
     //adicionando a última imagem da lista dentro do container de imagens
     for (var i = 0; i < listaImagens.length; i++){
+        
         containerImagens.innerHTML += "<img src="+ listaImagens[i] + ">";
+        containerImagens.innerHTML += titulo;
     }
 
     //imagemFilme = "0";
