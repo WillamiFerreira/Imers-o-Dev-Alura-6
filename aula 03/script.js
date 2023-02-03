@@ -1,4 +1,3 @@
-//criar duas listas, uma com banners de filmes e outra com seus nomes.
 var moviesContainer = document.querySelector(".movies-container");
 var bannerContainer = document.querySelectorAll(".banner-container");
 var moviesList = [
@@ -13,21 +12,21 @@ var moviesList = [
     "https://wucomsvisualliteracy.files.wordpress.com/2020/03/mv5bztlinwjhm2ytndc1mc00ytk1lwe2mgytzme4m2y5oddlnzqzxkeyxkfqcgdeqxvymzy0mte3nzu40._v1_-1-568x900-1.jpg?w=568"
 ];
 
-var moviesNames = ["Midsommar", "Bird Box", "Glass Onion", "X", "Marcas da Maldição", "Sorria", "Halloween","Piggy", "Nós"];
+var moviesNames = ["Midsommar", "Bird Box", "Glass Onion", "X", "Marcas da Maldição", "Sorria", "Halloween", "Piggy", "Nós"];
 
 
 var i = 0
 
-while (i < moviesList.length){
+while (i < moviesList.length) {
     var newBannerContainer = document.createElement("div");
     newBannerContainer.setAttribute("class", "banner-container");
-    if (moviesList[i].includes("jpg")){
+    if (moviesList[i].includes("jpg")) {
         var newBanner = moviesList[i];
         newBannerContainer.innerHTML = ` ${moviesNames[i]} <img src="${newBanner}">`;
         moviesContainer.appendChild(newBannerContainer);
 
     } else {
-        newBannerContainer.innerHTML = `${moviesNames[i]}<img src="imagens/banner-quebrado.png" title="Apenas imagens com extensão jpg são válidas">`
+        newBannerContainer.innerHTML = `${moviesNames[i]}<img src="https://lh3.googleusercontent.com/pw/AMWts8BTVndnmuCgLeyqcfhtRpHFF9SDORJeZOXj_JeoEP-tFiwotjBADaMbYjuwYUK8-cVPqiiK_I8pUgwAl10-qt8rhukBjl74Xf4TC9edDMJvrcA07AG1LPAMHTXFZfQcyOWVv1fqknE9J447IIqiRYFrYw=w170-h250-no?authuser=0" title="Apenas imagens com extensão jpg são válidas">`
         moviesContainer.appendChild(newBannerContainer);
     }
     i++
