@@ -10,8 +10,6 @@ function adicionarFilme() {
     //limpando o container de imagens para que elas não se repetirem.
     containerImagens.innerHTML = "";
 
-
-
     //Obtendo e atribuindo à variáveis o link da imagem e título.
     var linkImagem = document.querySelector("#filme").value;
     var titulo = document.querySelector("#titulo").value;
@@ -29,8 +27,6 @@ function adicionarFilme() {
 
         containerImagens.appendChild(newBannerContainer)
     }
-
-    //imagemFilme = "0";
 
     //limpando os campos
     document.querySelector('#filme').value = "";
