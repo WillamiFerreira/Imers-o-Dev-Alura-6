@@ -4,11 +4,13 @@ Guardar todos os filmes adicionados em uma lista/array e percorrer essa lista to
 
 var listaImagens = [];
 var listaTitulos = [];
+var listaFilmes = [];
 
 function adicionarFilme() {
     var containerImagens = document.querySelector("#listaFilmes");
     //limpando o container de imagens para que elas não se repetirem.
     containerImagens.innerHTML = "";
+    listaFilmes = []
 
     //Obtendo e atribuindo à variáveis o link da imagem e título.
     var linkImagem = document.querySelector("#filme").value;
@@ -25,10 +27,16 @@ function adicionarFilme() {
         var newBanner = listaImagens[i];
         newBannerContainer.innerHTML = ` ${listaTitulos[i]} <img src="${newBanner}">`; //usando o innerHTML, é atribuido o nome é imagem ao container criado 
 
-        containerImagens.appendChild(newBannerContainer)
+        containerImagens.appendChild(newBannerContainer)//adiciona o novo filme na lista
+        listaFilmes.push(newBannerContainer)//adicionando o novo filme no final da lista de itens.
     }
+
+    //console.log(listaFilmes)
 
     //limpando os campos
     document.querySelector('#filme').value = "";
     document.querySelector('#titulo').value = "";
+
+
+
 }
