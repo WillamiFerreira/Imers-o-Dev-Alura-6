@@ -18,12 +18,12 @@ var moviesNames = ["Midsommar", "Bird Box", "Glass Onion", "X", "Marcas da Maldi
 var i = 0
 
 while (i < moviesList.length) {
-    var newBannerContainer = document.createElement("div");
-    newBannerContainer.setAttribute("class", "banner-container");
-    if (moviesList[i].includes("jpg")) {
-        var newBanner = moviesList[i];
-        newBannerContainer.innerHTML = ` ${moviesNames[i]} <img src="${newBanner}">`;
-        moviesContainer.appendChild(newBannerContainer);
+    var newBannerContainer = document.createElement("div"); //cria um elemento div
+    newBannerContainer.setAttribute("class", "banner-container"); // adiciona uma class
+    if (moviesList[i].includes("jpg")) { //verifica se há "jpg" no link da imagem
+        var newBanner = moviesList[i]; //se sim, é criado uma variável para armazena a imagem correspondente
+        newBannerContainer.innerHTML = ` ${moviesNames[i]} <img src="${newBanner}">`; //usando o innerHTML, é atribuido o nome é imagem ao container criado 
+        moviesContainer.appendChild(newBannerContainer); //por fim, o container criado é adicionado ao container pai de todos.
 
     } else {
         newBannerContainer.innerHTML = `${moviesNames[i]}<img src="https://lh3.googleusercontent.com/pw/AMWts8BTVndnmuCgLeyqcfhtRpHFF9SDORJeZOXj_JeoEP-tFiwotjBADaMbYjuwYUK8-cVPqiiK_I8pUgwAl10-qt8rhukBjl74Xf4TC9edDMJvrcA07AG1LPAMHTXFZfQcyOWVv1fqknE9J447IIqiRYFrYw=w170-h250-no?authuser=0" title="Apenas imagens com extensão jpg são válidas">`

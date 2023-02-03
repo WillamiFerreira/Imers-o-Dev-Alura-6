@@ -10,6 +10,8 @@ function adicionarFilme() {
     //limpando o container de imagens para que elas não se repetirem.
     containerImagens.innerHTML = "";
 
+
+
     //Obtendo e atribuindo à variáveis o link da imagem e título.
     var linkImagem = document.querySelector("#filme").value;
     var titulo = document.querySelector("#titulo").value;
@@ -20,9 +22,12 @@ function adicionarFilme() {
 
     //adicionando a última imagem da lista dentro do container de imagens
     for (var i = 0; i < listaImagens.length; i++){
-        
-        containerImagens.innerHTML += "<img src="+ listaImagens[i] + ">";
-        containerImagens.innerHTML += titulo;
+        var newBannerContainer = document.createElement("div"); //cria um elemento div
+        newBannerContainer.setAttribute("class", "banner-container"); // adiciona uma class
+        var newBanner = listaImagens[i];
+        newBannerContainer.innerHTML = ` ${listaTitulos[i]} <img src="${newBanner}">`; //usando o innerHTML, é atribuido o nome é imagem ao container criado 
+
+        containerImagens.appendChild(newBannerContainer)
     }
 
     //imagemFilme = "0";

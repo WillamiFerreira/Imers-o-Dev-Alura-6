@@ -33,6 +33,19 @@ body {
     top: 10px;
     right: 10px;
 }
+.banner-container {
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 166px;
+    max-height: 250px;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 8px;
+    color: white;
+    font-size: 0.85em;
+    row-gap: 5px;
+
+}
 
 #listaFilmes img {
     margin: 10px;
