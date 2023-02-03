@@ -46,14 +46,18 @@ body {
     display: inline-flex;
     flex-direction: column;
     max-width: 166px;
-    max-height: 250px;
     justify-content: center;
     align-items: center;
     margin: 24px 8px;
     color: white;
     font-size: 0.85em;
     row-gap: 5px;
+    transition: .2s;
 
+}
+.banner-container img:hover{
+    filter: brightness(0.5);
+    transition: .2s;
 }
 #listaFilmes{
     display: flex;
@@ -67,6 +71,14 @@ body {
     max-height: 250px;
 }
 
+.botao-excluir{
+    display: none;
+    position: relative; bottom: 140px;
+    width: 100px;
+    padding: 10px 0px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
 .form-wrapper {
     margin: 0 0 15px;
 }

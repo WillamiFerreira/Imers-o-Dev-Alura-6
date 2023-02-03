@@ -23,6 +23,7 @@ function adicionarFilme() {
     //adicionando a última imagem da lista dentro do container de imagens
     for (var i = 0; i < listaImagens.length; i++){
         var newBannerContainer = document.createElement("div"); //cria um elemento div
+
         newBannerContainer.setAttribute("class", "banner-container"); // adiciona uma class
         var newBanner = listaImagens[i];
         newBannerContainer.innerHTML = ` ${listaTitulos[i]} <img src="${newBanner}">`; //usando o innerHTML, é atribuido o nome é imagem ao container criado 
@@ -30,6 +31,26 @@ function adicionarFilme() {
         containerImagens.appendChild(newBannerContainer)//adiciona o novo filme na lista
         listaFilmes.push(newBannerContainer)//adicionando o novo filme no final da lista de itens.
     }
+
+    listaFilmes.forEach(element => {
+
+        var botaoExcluir = document.createElement("div")
+        botaoExcluir.textContent = "excluir";
+        botaoExcluir.classList.add('botao-excluir');
+
+        element.appendChild(botaoExcluir);
+
+        element.addEventListener("mouseenter", function(){
+            botaoExcluir.style.display = "block"
+
+        });
+        
+        element.addEventListener("mouseout", function(){
+            botaoExcluir.style.display = "none"
+        });
+
+
+    });
 
     //console.log(listaFilmes)
 
