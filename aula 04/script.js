@@ -32,32 +32,39 @@ function adicionarFilme() {
         listaFilmes.push(newBannerContainer)//adicionando o novo filme no final da lista de itens.
     }
 
-    listaFilmes.forEach(element => {
-
-        var botaoExcluir = document.createElement("div")
-        botaoExcluir.textContent = "excluir";
-        botaoExcluir.classList.add('botao-excluir');
-
-        element.appendChild(botaoExcluir);
-
-        element.addEventListener("mouseenter", function(){
-            botaoExcluir.style.display = "block"
-
-        });
-        
-        element.addEventListener("mouseout", function(){
-            botaoExcluir.style.display = "none"
-        });
-
-
-    });
-
     //console.log(listaFilmes)
 
     //limpando os campos
     document.querySelector('#filme').value = "";
     document.querySelector('#titulo').value = "";
 
+}
 
+function removerFilme(){
+    //Obtendo o nome do filme que deseja excluir
+    var filmeParaExcluir = document.querySelector("#filmeaexcluir").value;
 
+    /*Tratamento de erro - deixando a primeira letra da cada parava em caixa alta*/
+    var novaFrase = []
+    var palavras = filmeParaExcluir.split(" ");
+
+    for (var i = 0; i < palavras.length; i++){
+        var novaPalavra = palavras[i][0].toUpperCase() + palavras[i].substr(1)
+        novaFrase.push(novaPalavra)
+    }
+
+    novaFrase = novaFrase.join(" ");
+
+    for (var i = 0; i < listaTitulos.length; i++){
+        if (novaFrase == listaTitulos[i]){
+            //remover o item 
+
+            listaFilmes.splice(i, 1);
+
+        } else {
+            alert("erro")
+        }
+    }
+
+    document.querySelector('#filmeaexcluir').value = "";
 }

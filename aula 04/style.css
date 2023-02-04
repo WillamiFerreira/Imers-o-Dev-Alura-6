@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
@@ -14,7 +14,7 @@ body {
     background-position: center top;
     background-repeat: no-repeat;
     min-height: 100vh;
-    width: 100vw;
+
 }
 
 .container {
@@ -42,6 +42,7 @@ body {
     top: 10px;
     right: 10px;
 }
+
 .banner-container {
     display: inline-flex;
     flex-direction: column;
@@ -53,13 +54,11 @@ body {
     font-size: 0.85em;
     row-gap: 5px;
     transition: .2s;
+    z-index: 10;
 
 }
-.banner-container img:hover{
-    filter: brightness(0.5);
-    transition: .2s;
-}
-#listaFilmes{
+
+#listaFilmes {
     display: flex;
     max-width: 90vw;
     justify-content: center;
@@ -71,17 +70,53 @@ body {
     max-height: 250px;
 }
 
-.botao-excluir{
-    display: none;
-    position: relative; bottom: 140px;
-    width: 100px;
-    padding: 10px 0px;
-    border: 2px solid white;
-    border-radius: 20px;
+.botao-adicionar {
+    background-color: green;
 }
+
+.botao-remover {
+    background-color: red;
+}
+
 .form-wrapper {
+    display: flex;
+    justify-content: space-around;
+    /*background-color: rgba(255, 0, 0, 0.185);*/
+    color: white;
     margin: 0 0 15px;
 }
+
+
+.form-wrapper > div p{
+    margin-bottom: 4px;
+    margin-top: 8px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.821);
+}
+
+label, h3{
+    margin-bottom: 10px;
+
+}
+
+.form-wrapper div:first-child {
+    /*background-color: rgba(0, 128, 0, 0.21);*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.form-wrapper div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100%;
+    align-items: flex-end;
+    text-align: right;
+    /*background-color: rgba(255, 68, 0, 0.201);*/
+}
+
 
 .form-wrapper input {
     display: block;
@@ -92,16 +127,20 @@ body {
 .form-wrapper button {
     border: 0;
     color: #ffffff;
-    background: #da1e26;
     font-weight: bold;
-    padding: 15px 20px;
-    font-size: 16px;
+    padding: 10px 15px;
+    font-size: 12px;
     border-radius: 4px;
     margin-top: 20px;
     cursor: pointer;
     transition: 0.3s;
+
 }
 
 .form-wrapper button:hover {
     opacity: 0.8;
+}
+
+input {
+    border-radius: 20px;
 }
