@@ -8,7 +8,7 @@
 body {
     font-family: "Roboto Mono", monospace;
     text-align: center;
-    background-image: url(Imagens/animeflix-background03.jpg);
+    background-image: url(Imagens/animeflix-background03-1.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -80,7 +80,7 @@ body {
 
 .botao-adicionar:hover {
     background-color: rgb(0, 68, 255);
-    border: 2px solid rgb(0, 68, 255);
+    box-shadow: 0px 0px 3px rgb(0, 68, 255);
 }
 
 .botao-remover {
@@ -90,13 +90,11 @@ body {
 
 .botao-remover:hover{
     background-color: red;
+    box-shadow: 0px 0px 3px red;
 }
 .form-wrapper {
     display: flex;
-    /*flex-direction: column;*/
     justify-content: space-around;
-    /*background-color: rgba(255, 0, 0, 0.185);*/
-    /*align-items: center;*/
     color: white;
     margin: 0 0 15px;
 }
@@ -115,7 +113,6 @@ label, h3{
 }
 
 .form-wrapper div:first-child {
-    /*background-color: rgba(0, 128, 0, 0.21);*/
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -163,9 +160,19 @@ input {
         flex-direction: column;
         justify-content: space-around;
         /*background-color: rgba(255, 0, 0, 0.185);*/
-        row-gap: 25px;
+        row-gap: 30px;
         align-items: center;
         color: white;
         margin: 0 0 15px;
     }
+
+    .form-wrapper div:nth-child(2) {
+        align-items: start;
+        text-align: left;
+        border-top: 2px solid rgba(255, 255, 255, 0.622);
+        padding-top: 8px;
+    }
+
+
+
 }
