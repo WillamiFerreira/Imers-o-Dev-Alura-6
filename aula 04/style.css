@@ -8,18 +8,21 @@
 body {
     font-family: "Roboto Mono", monospace;
     text-align: center;
-    background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-04-aluraflix-e-filmes.png");
-    background-color: #000000;
+    background-image: url(Imagens/animeflix-background03.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
     min-height: 100vh;
+    backdrop-filter: blur(3px);
+    /*backdrop-filter: brightness(0.2);*/
 
 }
 
 .container {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     padding: 20px;
+    backdrop-filter: blur(2px);
 }
 
 .page-title {
@@ -71,17 +74,29 @@ body {
 }
 
 .botao-adicionar {
-    background-color: green;
+    background-color: #00000000;
+    border: 2px solid rgb(0, 68, 255);
+}
+
+.botao-adicionar:hover {
+    background-color: rgb(0, 68, 255);
+    border: 2px solid rgb(0, 68, 255);
 }
 
 .botao-remover {
-    background-color: red;
+    background-color: #00000000;
+    border: 2px solid red;
 }
 
+.botao-remover:hover{
+    background-color: red;
+}
 .form-wrapper {
     display: flex;
+    /*flex-direction: column;*/
     justify-content: space-around;
     /*background-color: rgba(255, 0, 0, 0.185);*/
+    /*align-items: center;*/
     color: white;
     margin: 0 0 15px;
 }
@@ -125,7 +140,6 @@ label, h3{
 }
 
 .form-wrapper button {
-    border: 0;
     color: #ffffff;
     font-weight: bold;
     padding: 10px 15px;
@@ -137,10 +151,21 @@ label, h3{
 
 }
 
-.form-wrapper button:hover {
-    opacity: 0.8;
-}
 
 input {
     border-radius: 20px;
+}
+
+@media (max-width: 576px){
+    
+    .form-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /*background-color: rgba(255, 0, 0, 0.185);*/
+        row-gap: 25px;
+        align-items: center;
+        color: white;
+        margin: 0 0 15px;
+    }
 }
